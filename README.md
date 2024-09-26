@@ -1,0 +1,1 @@
+Este é o Analish, produzido por @nycholas_dev e @mreginal
