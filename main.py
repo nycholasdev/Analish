@@ -7,16 +7,12 @@ def diagnosticar_peixe():
     if resposta == 'sim':
         sintomas = input("\nDescreva os sintomas observados no peixe: ").lower()
 
-        # Fluxograma 1
-
         resultado = analisar_sintomas(sintomas)
         return resultado
     
     else:
-        # Fluxograma 2 - Perguntas interativas com "sim" ou "não"
         resultado = analisar_questões()
         return resultado
 
-# Executar o diagnóstico
 diagnostico = diagnosticar_peixe()
 print(diagnostico)

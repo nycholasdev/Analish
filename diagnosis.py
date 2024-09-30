@@ -2,6 +2,7 @@ def analisar_sintomas(sintomas):
 
     if ('nadando de lado' in sintomas or 
         'barriga para cima' in sintomas or 
+        'barriga pra cima' in sintomas or
         'cabeça para baixo' in sintomas):
         return ("\nProvavelmente se trata de doença da bexiga natatória - "
                 "Recomenda-se buscar ajuda profissional")
@@ -35,7 +36,7 @@ def analisar_sintomas(sintomas):
                 "Recomenda-se buscar um especialista para tratamento adequado com base na espécie do "
                 "peixe e na fase em que a doença se encontra.")
     
-    elif ('se esfregando' in sintomas or 'roçando' in sintomas):
+    elif ('esfregando' in sintomas or 'roçando' in sintomas):
         fundo = input("\nO peixe está no fundo do aquário, tem barbatanas avermelhadas" 
                       " ou falta de apetite? (sim/não): ").strip().lower()
         
@@ -114,3 +115,6 @@ def analisar_sintomas(sintomas):
             
             else:
                 return "\nNão conseguimos identificar o problema, forneça mais informações"
+        
+        else:
+            return "\nNão conseguimos identificar o problema, forneça mais informações"
